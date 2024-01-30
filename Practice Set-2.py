@@ -172,5 +172,31 @@ print("Display the 5 element : ",tuple_value[4])
 
 ---------------------------------------------------------------
 
+# 13) Create a set insert some values. i). Add elements to it and display, ii). Remove elements from it
+# and display.
+
+# set_value = input("enter list value in round brackets :  ")
+set_value = {2,3,4,6,'a',-255,'rahul'}
+
+#  Add elements to it and display
+set_value.update([10])
+print(set_value)
+
+# Remove elements from it and display
+
+set_value.remove(2)
+print(set_value)
+
+---------------------------------------------------------------
+
+# 14) Create a set insert some values and convert it to frozenset. Try to add and remove some
+# elements.
+
+set_value = {1,2,3,4,'a'}
+print(set_value)
+
+fs = frozenset(set_value)
+print(fs)
+---------------------------------------------------------------
 
  
