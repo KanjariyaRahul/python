@@ -199,4 +199,83 @@ fs = frozenset(set_value)
 print(fs)
 ---------------------------------------------------------------
 
+# 15) Create an empty dictionary, Insert some Roll:Name into it. i). Retrieve 5th value using key, ii).
+# Retrieve all the roll numbers, iii). Retrieve all the names, iv). Change the name of the student
+# having roll no. 7, v). Remove roll no 9, vi). Display the dictionary.
+
+s_dict = {}
+
+print(s_dict)
+
+# Insert some Roll:Name into it
+
+s_dict = {
+    1 : 'rahul',
+    2 : 'jay',
+    3 : 'dhaval',
+    4 : 'mahaveer',
+    5 : 'raj',
+    6 : 'parash',
+    7 : 'mukesh',
+    8 : 'mehul',
+    9 : 'vijay',
+    10 : 'yash'
+}
+
+# i). Retrieve 5th value using key
+
+print(s_dict[5])
+
+# ii). Retrieve all the roll numbers
+
+print(s_dict.keys())
+
+# iii). Retrieve all the names
+
+print (s_dict.values())
+
+# iv). Change the name of the student having roll no. 7
+
+s_dict[7] = 'ajay'
+print(s_dict)
+
+# v). Remove roll no 9
+
+del s_dict[9]
+
+# vi). Display the dictionary
+print(s_dict)
+
+---------------------------------------------------------------
+
+# 16. Create a list having names of months. i). Check whether December is in list or not, 
+#ii). Query the list using ‘not in’.
+
+months_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+#  Check whether December is in list or not,
+
+check_december = "December" in months_list
+print(" Is December in the list? : ", check_december)
+
+# Query the list using ‘not in’.
+
+months_not = [month for month in months_list if "January" not in month]
+
+print("Months not containing 'January':", months_not)
+
+---------------------------------------------------------------
+
+# Take two integer values from the user using split(), perform basic arithmetic operation on the
+ # values.
+
+n1,n2 = [int(no) for no in input('Enter two integer value by giving space : ').split()]
+print('----------------------------------------------')
+print('The Addition of two number is : ',n1 + n2,'\n')
+print('The Subtraction of two number is : ',n1 - n2,'\n')
+print('The Multiplication of two number is : ',n1 * n2,'\n')
+print('The Division of two number is : ',n1 / n2,'\n')
+---------------------------------------------------------------
+
+
  
